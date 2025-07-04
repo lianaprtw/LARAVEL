@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Bagian atas: logo & judul */
+.navbar-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #FFD733;
+    color: #9B0C26;
+    padding: 40px 35px;
+}
+
+.navbar-top img {
+    width: 160px;
+    height: auto;
+}
+
+.site-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    flex: none;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    /* margin-left: auto; */
+}
+
+.hamburger:hover {
+    background: #FFD733;
+    color: #9B0C26;
+}
+
+/* Bagian bawah: menu navigasi */
+.navbar-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    background: #9B0C26;
+    color: white;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #FFD733;
+}
+
+.search-box{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.search-box input{
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-box button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background: #F8F8F8;
+    color: black;  
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.search-box button:hover {
+    background: #FFD733;
+}
+
+@media (max-width: 1100px) {
+    .navbar-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        gap: 5px;
+    }
+
+    .navbar-top img {
+        width: 100px;
+    }
+    .site-title {
+        flex: none;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+    .hamburger{
+        display: block;
+        width: 100%;
+        background: #9B0C26;
+        color: #FFD733;
+        text-align: right;
+        padding: 15px 20px;
+        cursor: pointer;
+        font-size: 2rem;
+        box-sizing: border-box;
+    }
+
+    .hamburger:hover {
+        background: #9B0C26;
+        color: #FFD733;
+    }
+    
+    .navbar-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #9B0C26;
+        width: 100%;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        box-sizing: border-box;
+        border-top: none;
+    }
+
+    .navbar-bottom.active {
+        display: flex;
+        max-height: 500px; 
+        padding: 15px 20px;
+    }
+
+    .navbar-menu{
+        list-style: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-menu li {
+        width: 100%;
+    }
+
+    .navbar-menu a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        text-align: left;
+        padding: 12px 0;
+        box-sizing: border-box;
+    }
+
+    .search-box{
+        margin: 10px 0 0 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .search-box input {
+        flex-grow: 1;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .search-box button {
+        padding: 8px 12px;
+        border-radius: 4px;
+    }
+
+    .search-box button:hover {
+        background: #FFD733;
+    }   
+}
