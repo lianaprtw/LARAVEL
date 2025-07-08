@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Contact')
+@section('title', 'Contact Us')
 
 @section('content')
 <section class="page">

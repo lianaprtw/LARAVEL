@@ -8,14 +8,14 @@
 
   <div class="navbar-bottom" id="navbar-menu">
     <ul class="navbar-menu">
-      <li><a href="{{ url('/') }}">HOME</a></li>
-      <li><a href="{{ url('/profile') }}">PROFILE</a></li>
-      <li><a href="{{ url('/catalogue') }}">CATALOGUE</a></li>
-      <li><a href="{{ url('/terms') }}">TERM CONDITIONS</a></li>
-      <li><a href="{{ url('/contact') }}">BANK ACCOUNT</a></li>
-      <li><a href="{{ url('/contact') }}">YOUR CHART(0)</a></li>
-      <li><a href="{{ url('/contact') }}">OUR VIDEO</a></li>
-      <li><a href="{{ url('/contact') }}">CONTACT US</a></li>
+      <li><a href="/" class="{{ Request::is('/') ? 'active' : '' }}">HOME</a></li>
+      <li><a href="/profile" class="{{ Request::is('profile') ? 'active' : '' }}">PROFILE</a></li>
+      <li><a href="/catalogue" class="{{ Request::is('catalogue') ? 'active' : '' }}">CATALOGUE</a></li>
+      <li><a href="/term-conditions" class="{{ Request::is('term-conditions') ? 'active' : '' }}">TERM CONDITIONS</a></li>
+      <li><a href="/bank-account" class="{{ Request::is('bank-account') ? 'active' : '' }}">BANK ACCOUNT</a></li>
+      <li><a href="/your-chart" class="{{ Request::is('your-chart') ? 'active' : '' }}">YOUR CHART(0)</a></li>
+      <li><a href="/our-video" class="{{ Request::is('our-video') ? 'active' : '' }}">OUR VIDEO</a></li>
+      <li><a href="/contact-us" class="{{ Request::is('contact-us') ? 'active' : '' }}">CONTACT US</a></li>
     </ul>
 
     <div class="search-box">
