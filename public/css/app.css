@@ -205,11 +205,14 @@ body{
     flex-direction: row;
     justify-content: space-between;
     max-width: 1600px;
+    /* max-width: 1200px; */
     width: 100%;
     margin: 20px auto;
+    /* margin: 0 auto; */
     gap: 20px;
     box-sizing: border-box;
     padding: 0 5%;
+    /* padding: 0 15px; */
 }
 
 .main-content {
@@ -346,6 +349,7 @@ border-bottom: 1px solid black;
     height: auto;
     padding: 5px;
     border-radius: 4px;
+    margin-top: 20px;
 }
 
 .company-info {
@@ -473,9 +477,356 @@ border-bottom: 1px solid black;
     color: #9B0C26;
 }
 
+/* PROFILE ABOUT US */
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+.about-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: gray;
+    text-align: justify;
+}
+
+.about-section strong {
+    color: gray;
+    font-weight: bold;
+}
+.about-section h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.about-section h2 .bold-order {
+    font-weight: 800;
+    position: relative;
+}
+
+.about-section h2 .bold-order::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 5px;
+    background: #9B0C26;
+    z-index: 1;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image text-top"
+    "text-bottom text-bottom";
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.about-image {
+    grid-area: image;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-text-top {
+    grid-area: text-top;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.about-text-top h4 {
+    margin-top: 0;
+}
+.about-text-bottom {
+    grid-area: text-bottom;
+}
+
+.payment-logos-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+.payment-logos-about img {
+    max-width: 85px;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 70px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    background: #F8F8F8;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-radius: 8px;
+    align-items: start;
+}
+
+.contact-card {
+    background: #F8F8F8;
+    color: #666661;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:black;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-card address {
+    color: #ff7033;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.contact-phone p,
+.contact-mobile p,
+.contact-email p,
+.contact-website p {
+    margin: 3px 0;
+    line-height: 1.4;
+    color: #666661;
+    font-size: 0.95rem;
+    line-height: 1.4 ;
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+
+.phone-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.phone-item .label {
+    min-width: 70px;
+}
+
+.phone-item .number {
+    color: #666661;
+    font-size: 0.95rem;
+}
+
+.phone-item .indent .label {
+    display: none;
+}
+
+.phone-item.indent .number { 
+    padding-left: 70px;
+}
+
+.contact-website {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+
+.label {
+    color: #666661;
+    font-size: 0.95rem;
+}
+
+.website-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.website-item .label {
+    min-width: 70px;
+}
+
+.website-item .website a {
+    color:#9B0C26;
+    font-size: 0.95rem;
+}
+
+.website-item.indent .label {
+    display: none;
+}
+
+.website-item.indent .website {
+    padding-left: 70px;
+}
+
+.contact-card a {
+    color: #666661;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+
+.product-list a {
+    position: relative;
+    color: #666661;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding-left: 40px;
+}
+
+.product-list a::before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFD733;
+    font-size: 1.3rem;
+}
+
+.product-list a:hover {
+    color: #9B0C26;
+}
+
+.term-section {
+    margin-bottom: 50px;
+}
+
+.term-section h2 {
+    font-weight: normal;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    position: relative;
+    width: 90vw;
+}
+
+.term-section h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.term-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    line-height: 1;
+    color:#666661;
+    text-align: justify;
+    font-size: 0.90rem;
+}
+
+.term-section h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #666661;
+}
+
+.term-section .bank-account {
+    margin-bottom: 20px;
+}
+.term-section h4 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #666661;
+}
+
+.term-section h2 .bold-order {
+    font-weight: 800;
+    position: relative;
+}
+
+.term-section h2 .bold-order::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 5px;
+    background: #9B0C26;
+    z-index: 1;
+}
+
+.website-item .website a {
+    color: #9B0C26;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
 /* Responsif */
 
-@media (max-width: 1100px) {
+@media (max-width:1100px){
+    .contact-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar-top {
         flex-direction: column;
         align-items: center;
@@ -618,6 +969,7 @@ border-bottom: 1px solid black;
         flex-direction: column;
         gap: 15px;
         padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .main-content, .sidebar {
@@ -648,7 +1000,7 @@ border-bottom: 1px solid black;
     .head-office-info, .factory-info {
         width: 90%;
         min-width: unset;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
     }
 
@@ -696,6 +1048,100 @@ border-bottom: 1px solid black;
     .video-container {
         max-width: 100%;
         margin: 0 auto;
+    }
+
+    .about-content {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text-top, .about-text-bottom {
+        margin-top: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .payment-logos-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .logo-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .payment-logos-about img {
+        max-width: 70px;
+        gap: 20px;
+    }
+
+    .contact-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .phone-item .label, 
+    .website-item .label {
+        flex-basis: 60px;
+    }
+
+    .phone-item .label .number {
+        padding-right: 10px;
+    }
+    .phone-item.indent .number, 
+    .website-item.indent .website  {
+        padding-left: 70px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .product-list a{
+        padding-left: 70px;
+    }
+
+    .product-list a::before {
+        font-size: 1.1rem;
+        left: 0;
+    }
+
+    .term-section {
+        padding: 0 15px;
+    }
+
+    .term-section h2 {
+    font-size: 1.4rem;
+    width: 100%;
+    }
+
+    .term-section p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .term-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .term-section h4 {
+        font-size: 1rem;
     }
 }
 
