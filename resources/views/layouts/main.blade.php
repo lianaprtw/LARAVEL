@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
 
+    {{-- bootstrap --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
     {{-- custom app css --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     
@@ -34,13 +38,13 @@
     });
 </script>
 
-{{-- <!-- Swiper JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"> --}}
+{{-- bootstrap bundle --}}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-// <!-- jQuery -->
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-// <!-- Slick Carousel JS -->
+<!-- Slick Carousel JS -->
 <script src="{{ asset('js/slick.min.js') }}"></script>
 
 
