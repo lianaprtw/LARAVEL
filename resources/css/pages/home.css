@@ -1,0 +1,359 @@
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1600px;
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 20px auto;
+    /* margin: 0 auto; */
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 0 5%;
+    /* padding: 0 15px; */
+}
+
+.main-content {
+    flex: 3;
+    width: auto;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex: 1;
+    width: auto;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.main-slider {
+    width: 100%;
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #484747;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #9B0C26;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #9B0C26;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slogan {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-style: italic;
+}
+
+.description {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.order-info h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.order-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.order-info h2 .bold-order {
+    font-weight: 900;
+}
+
+.order-info h2 {
+position: relative;
+font-weight: normal;
+/* display: inline-block; */
+padding-bottom: 8px;
+border-bottom: 1px solid black;
+}
+
+.order-info h2 .bold-order {
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.order-info h2 .bold-order::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 5px;
+    background-color: #9B0C26;
+    z-index: 1;
+}
+
+
+.payment-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.payment-logos img {
+    max-width: 75px;
+    height: auto;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.company-info {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: black;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.head-office-info, .factory-info {
+    flex: 1;
+    min-width: 280px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 0.80rem;
+    line-height: 0.65;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.contact-section p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-section a {
+    color: #9B0C26;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.tv-program-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tv-program-section h2 {
+    position: relative;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+.tv-program-section h2 .bold-order {
+    position: relative;
+    font-weight: bold;
+}
+
+.tv-program-section h2 .bold-order::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 5px;
+    background-color: #9B0C26;
+    z-index: 1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 30px auto;
+    max-width: none;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.see-more-video {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #9B0C26;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-more-video:hover {
+    background-color: #FFD733;
+    color: #9B0C26;
+}
+
+@media (max-width: 820px) {
+    .main-content, .sidebar {
+    flex: none;
+    width: 100%;
+    }
+
+    .slider-container, .main-slider, .slider-item img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .slider-item img {
+        height: 250px;
+    }
+
+    .slogan {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .head-office-info, .factory-info {
+        width: 90%;
+        min-width: unset;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contact-section h3 {
+        text-align: center;
+    }
+
+    .order-info h2 {
+        font-size: 1.4rem;
+        /* padding-bottom: 8px; */
+    }
+
+    .tv-program-section {
+        padding: 0;
+    }
+
+    .tv-program-section h2 {
+        text-align: left;
+        border-bottom: 1px solid black;
+        position: relative;
+        font-size: 1.4rem;
+        padding-bottom: 8px;
+    }
+
+    .tv-program-section h2 .bold-order {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tv-program-section h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100px;
+        height: 5px;
+        background-color: #9B0C26;
+        z-index: 1;
+    }
+
+    .tv-program-section h2 .bold-order::after {
+        content: none;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+
+}

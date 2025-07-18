@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\YourCartController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -11,9 +12,9 @@ Route::get('/profile', function () {
     return view('pages.profile');
 });
 
-Route::get('/catalogue', function () {
-    return view('pages.catalogue');
-});
+// Route::get('/catalogue', function () {
+//     return view('pages.catalogue');
+// });
 
 Route::get('/term-conditions', function () {
     return view('pages.term-conditions');
@@ -42,3 +43,7 @@ Route::delete('/cart/{id}', [YourCartController::class, 'destroy'])->name('cart.
 Route::get('/checkout', function (){
     return view('pages.checkout');
 })->name('checkout');
+
+Route::get('/catalogue', [ProductController::class, 'index'])->name('catalogue');
+
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');

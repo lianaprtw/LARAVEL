@@ -10,7 +10,7 @@
         <div class="row">
             {{-- sidebar --}}
             <div class="col-lg-3 mb-4">
-                @include('components.sidebar')
+                @include('components.sidebar', ['categories' => $categories])
             </div>
 
             {{-- konten produk --}}
